@@ -12,6 +12,7 @@ app.get('/', function(req,res,next){
     res.send('Jesus');
 });
 
+
 app.listen(app.get('port'),()=> {
     console.log('servidor activo')
 });
