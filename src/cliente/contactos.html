@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
+    <link rel="stylesheet" href="/static/ext/aos/aos.css"> 
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel "stylesheet">
     <link rel="stylesheet" href="/static/img/iconos/css/fontello.css">
     <link rel="stylesheet" href="/static/ext/bootstrap/css/bootstrap.min.css">
@@ -14,7 +15,7 @@
         <!-- Usamos un navbar proporcionado por bootstrap y lo modificamos un poco-->
         <nav class="ewk_navbar navbar navbar-expand-lg bg-light fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Jesús</a>
+              <a class="navbar-brand" href="">Contacto</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -34,128 +35,70 @@
             </div>
           </nav>
     </header>
-    <!--Section: Contact v.2-->
-
-    <section class="ewk_cont_banner2 mb-4">
-
-        <!--Section heading-->
-        <h1 class="h1-responsive font-weight-bold text-center my-4">Contactanos</h1>
-        <!--Section description-->
-        <p class="text-center w-responsive mx-auto mb-5"><h2>¿Tienes alguna pregunta? Porfavor no dude en contactarnos directamente.
-            Nuestro equipo le responderá dentro de unas horas para ayudarle</h2></p>
-
-        <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="php/contactos.php" method="POST">
-                    <fieldset>
-                    <!--Grid row-->
-                    <div class="row">
-
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="name" name="name" placeholder="Your name" class="form-control">
-                                <label for="name" class=""></label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="email" name="email" placeholder="Email" class="form-control">
-                                <label for="email" class=""></label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                    </div>
-                    <!--Grid row-->
-
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form mb-0">
-                                <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control">
-                                <label for="subject" class=""></label>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Grid row-->
-
-                    <!--Grid row-->
-                    <div class="row">
-
-                        <!--Grid column-->
-                        <div class="col-md-12">
-
-                            <div class="md-form">
-                                <textarea type="text" id="message" name="message" placeholder="Put your message" rows="2" class="form-control md-textarea"></textarea>
-                                <label for="message"></label>
-                            </div>
-
-                        </div>
-                    </div>
-                <!--Grid row-->
-                    </fieldset>
-                </form>
-                <div class="text-center text-md-left">
-                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-                </div>
-                <div class="status"></div>
-            </div>
-            <!--Grid column-->
-            <!--Grid column-->
-                <div class="col-md-3 text-center">
-                    <ul class="list-unstyled mb-0">
-                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p>Castellón, Comunidad Valenciana, España</p>
-                        </li>
-
-                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                        <p>+34 666 222 11 </p>
-                    </li>
-
-                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>jesus@gmail.com</p>
-                    </li>
-                </ul>
-            </div>
-            <!--Grid column-->
-        </div>
-    </section>
-<!--Section: Contact v.2-->
-<footer>
-    <div class="ewk_cont_footer">
+ 
+    <section class = "mt-5 ">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <h2>Jesús</h2>
-                    <p></p>
+                <div class="col-md-12">
+                    <h2>Escribenos | Nuestro personal esta listo para atenderte</h2>
+                    <p>Somos el numero en atencion al cliente</p>
                 </div>
-                <div class="col-md-3">
-                    <h2>Categorias</h2>
-                    <a href="index.html">Inicio</a>
-                    <a href="">Conocenos</a>
-                    <a href="">Proyectos</a>
-                    <a href="contactos.html">Contactanos</a>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <div>
+                        <div class="form-group">
+                            <label for="idInCE">Correo Electronico</label>
+                            <input type="email" class="form-control" id="idInCE" placeholder="name@example.com"> 
+                        </div>
+                        <div class="form-group">
+                            <label for="idInNom">¿Cuál es tu nombre?</label>
+                            <input type="text" class="form-control" id="idInNom" placeholder="Nombre"> 
+                        </div>
+                        <div class="form-group">
+                            <label for="idInMen">¿En que podemos ayudarte?</label>
+                            <textarea id="idInMen" class="form-control" rows="4"></textarea> 
+                        </div>
+                        <button id="idBtnEnviar">Enviar mensaje</button>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <h2>Recomendado</h2>
-                    <p>Visita nuestra pagina web</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="/static/img/arq2.jpg" class ="img-fluid" alt="Diseño arquitectonico">
-                    <h3> Jesús</h3>
-                    <p>Electrónica y Diseño Web</p>
+                <div class="col-md-6 m-auto text-center"> 
+                    <img src="/static/img/arq2.jpg" alt="Diseño arquitectonico">
+                    <h3>Servicio al cliente</h3>
+                    <p>100% Calificados / Atencion al cliente</p>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </section>
 
+    <footer>
+        <div class="ewk_cont_footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h2>Jesús</h2>
+                        <p></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>Categorias</h2>
+                        <a href="index.html">Inicio</a>
+                        <a href="">Conocenos</a>
+                        <a href="">Proyectos</a>
+                        <a href="contactos.html">Contactanos</a>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>Recomendado</h2>
+                        <p>Visita nuestra pagina web</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="/static/img/arq2.jpg" class ="img-fluid" alt="Diseño arquitectonico">
+                        <h3> Jesús</h3>
+                        <p>Electrónica y Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="/static/ext/bootstrap/js/jquery.js"></script>
     <script src="/static/ext/bootstrap/js/bootstrap.min.js"></script>
     <script src="bundle.js"></script> 
