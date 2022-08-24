@@ -37,6 +37,7 @@ app.post('/api/contacto',function(req,res,next){
             <div>
             <p>Correo:${req.body.c}</p>
             <p>Nombre: ${req.body.n}</p>
+            <p>Telefono: ${req.body.t}</p>
             <p>Mensaje:${req.body.m}</p>
             </div>
         `

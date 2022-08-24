@@ -8,12 +8,14 @@ AOS.init();
 document.getElementById("idBtnEnviar").addEventListener("click",function(){
     let strCorreo = document.getElementById("idInCE").value;
     let strNombre = document.getElementById("idInNom").value;
+    let strTelefono = document.getElementById("idInTel").value;
     let strMensaje = document.getElementById("idInMen").value;
 
-    if(strCorreo != "" && strNombre != "" && strMensaje != ""){
+    if(strCorreo != "" && strNombre != "" && strMensaje != "" && strTelefono){
         let datos ={
             c: strCorreo,
             n: strNombre,
+            t: strTelefono,
             m: strMensaje
         };
 
@@ -21,6 +23,7 @@ document.getElementById("idBtnEnviar").addEventListener("click",function(){
         .then(function(response){
             document.getElementById("idInCE").value="";
             document.getElementById("idInNom").value="";
+            document.getElementById("idInTel").value="";
             document.getElementById("idInMen").value="";
             alert("Gracias por escribirnos, en breve te contactaremos");
         }).catch(function(error){
